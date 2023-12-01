@@ -58,11 +58,11 @@
         <ul class="list-disc pl-9 mb-3">
             <li>Provide timely reminders for seniors regarding medicine intake, daily routine, and other caregiving tasks.</li>
         </ul>
-        <h3 class="pl-5 text-lg font-semibold mb-2">e. Symptom Reporting</h3>
+        <h3 class="pl-5 text-lg font-semibold mb-2">f. Symptom Reporting</h3>
         <ul class="list-disc pl-9 mb-3">
             <li>Allow seniors to report their symptoms to caregivers, promoting open communication and proactive caregiving.</li>
         </ul>
-        <h3 class="pl-5 text-lg font-semibold mb-2">f. Data History</h3>
+        <h3 class="pl-5 text-lg font-semibold mb-2">g. Data History</h3>
         <ul class="list-disc pl-9 mb-4">
             <li>Maintain a comprehensive history of all information collected above for both caregivers and seniors.</li>
         </ul>
@@ -90,7 +90,7 @@
         <p class="pl-5 mb-4">We may update this Privacy Policy periodically to reflect changes in our practices. Users are encouraged to check for updates regularly.</p>
 
         <h2 class="text-xl font-semibold mb-2">9. Contact Us</h2>
-        <p class="pl-5 mb-4">If you have any questions or concerns about our Privacy Policy, please reach out to us at yteamapplication@gmail.com.</p>
+        <p class="pl-5 mb-4">If you have any questions or concerns about our Privacy Policy, please reach out to us at <a class="underline" href="mailto:yteamapplication@gmail.com">yteamapplication@gmail.com</a>.</p>
 
         <p class="mb-4">By using Careific, you acknowledge and agree to the terms outlined in this Privacy Policy. We recommend reading it thoroughly to ensure a clear understanding of our practices concerning your information. Your privacy and trust are paramount to us, and we are committed to providing a secure and transparent caregiving experience through our app.</p>
 
