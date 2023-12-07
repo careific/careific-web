@@ -168,7 +168,7 @@
             <h1 class="mb-1 text-5xl font-bold text-center lg:text-7xl">Careific</h1>
             <p class="mb-8 text-lg text-center lg:text-2xl">Monitoring Health and Nurturing Hearts</p>
             <a href="https://apps.apple.com/id/app/careific-monitor-your-senior/id6471642474" target="_blank">
-                <img src="%sveltekit.assets%/../img/app-store.svg" alt="" class="mx-auto w-36 lg:w-48">
+                <img src="%sveltekit.assets%/../img/app-store.svg" alt="" class="mx-auto transition w-36 lg:w-48 hover:scale-105">
             </a>
         </div>
     </div>
@@ -235,23 +235,23 @@
         {/if}
 
         <div class="flex flex-col gap-4 reveal-right">
-            <button class="{selectedFeature == 'tracker' ? 'bg-blue' : 'bg-white'} border-2 border-blue p-2 lg:p-4 rounded-lg cursor-pointer" on:click={() => (selectedFeature = "tracker")}>
+            <button class="{selectedFeature == 'tracker' ? 'bg-blue' : 'bg-white'} border-2 border-blue p-2 lg:p-4 rounded-lg cursor-pointer hover:scale-105 transition" on:click={() => (selectedFeature = "tracker")}>
                 <h2 class="text-xl lg:text-2xl xl:text-3xl font-bold text-left {selectedFeature == 'tracker' ? 'text-white' : 'text-blue'}">Tracker</h2>
                 <p class="text-sm xl:text-base text-left {selectedFeature == 'tracker' ? 'text-white' : 'text-black'}">The capability to track essential information about their seniors, including location, heart rate, device state, and inactivity.</p>
             </button>
-            <button class="{selectedFeature == 'emergency' ? 'bg-blue' : 'bg-white'} border-2 border-blue p-2 lg:p-4 rounded-lg cursor-pointer" on:click={() => (selectedFeature = "emergency")}>
+            <button class="{selectedFeature == 'emergency' ? 'bg-blue' : 'bg-white'} border-2 border-blue p-2 lg:p-4 rounded-lg cursor-pointer hover:scale-105 transition" on:click={() => (selectedFeature = "emergency")}>
                 <h2 class="text-xl lg:text-2xl xl:text-3xl font-bold text-left  {selectedFeature == 'emergency' ? 'text-white' : 'text-blue'}">Emergency</h2>
                 <p class="text-sm xl:text-base text-left {selectedFeature == 'emergency' ? 'text-white' : 'text-black'}">The emergency feature combines fall detection and an SOS button for immediate assistance, ensuring rapid response in critical situations.</p>
             </button>
-            <button class="{selectedFeature == 'walkie-talkie' ? 'bg-blue' : 'bg-white'} border-2 border-blue p-2 lg:p-4 rounded-lg cursor-pointer" on:click={() => (selectedFeature = "walkie-talkie")}>
+            <button class="{selectedFeature == 'walkie-talkie' ? 'bg-blue' : 'bg-white'} border-2 border-blue p-2 lg:p-4 rounded-lg cursor-pointer hover:scale-105 transition" on:click={() => (selectedFeature = "walkie-talkie")}>
                 <h2 class="text-xl lg:text-2xl xl:text-3xl font-bold text-left  {selectedFeature == 'walkie-talkie' ? 'text-white' : 'text-blue'}">Walkie-Talkie</h2>
                 <p class="text-sm xl:text-base text-left {selectedFeature == 'walkie-talkie' ? 'text-white' : 'text-black'}">By simply pressing the button, it can transmit voice directly to the senior's phone, even if it's locked.</p>
             </button>
-            <button class="{selectedFeature == 'routines' ? 'bg-blue' : 'bg-white'} border-2 border-blue p-2 lg:p-4 rounded-lg cursor-pointer" on:click={() => (selectedFeature = "routines")}>
+            <button class="{selectedFeature == 'routines' ? 'bg-blue' : 'bg-white'} border-2 border-blue p-2 lg:p-4 rounded-lg cursor-pointer hover:scale-105 transition" on:click={() => (selectedFeature = "routines")}>
                 <h2 class="text-xl lg:text-2xl xl:text-3xl font-bold text-left  {selectedFeature == 'routines' ? 'text-white' : 'text-blue'}">Routines</h2>
                 <p class="text-sm xl:text-base text-left {selectedFeature == 'routines' ? 'text-white' : 'text-black'}">Enhances the interactive display of seniors' schedules by adding medication and activity reminders in real-time. </p>
             </button>
-            <button class="{selectedFeature == 'ai-consultation' ? 'bg-blue' : 'bg-white'} border-2 border-blue p-2 lg:p-4 rounded-lg cursor-pointer" on:click={() => (selectedFeature = "ai-consultation")}>
+            <button class="{selectedFeature == 'ai-consultation' ? 'bg-blue' : 'bg-white'} border-2 border-blue p-2 lg:p-4 rounded-lg cursor-pointer hover:scale-105 transition" on:click={() => (selectedFeature = "ai-consultation")}>
                 <h2 class="text-xl lg:text-2xl xl:text-3xl font-bold text-left  {selectedFeature == 'ai-consultation' ? 'text-white' : 'text-blue'}">AI Medical Consultation</h2>
                 <p class="text-sm xl:text-base text-left {selectedFeature == 'ai-consultation' ? 'text-white' : 'text-black'}">The provides suggestions and answers based on questions about senior’s condition.</p>
             </button>
