@@ -1,17 +1,42 @@
-<script>
-    
+<script lang="ts">
+    import { fly } from 'svelte/transition'
+    import AnimatedHamburger from '$lib/AnimatedHamburger.svelte'
+
+    export let open = false
+    export let onClick = (): void => {
+        open = !open
+    }
 </script>
 
-<nav class="flex items-center justify-between px-4 py-4 text-white md:px-8 lg:px-12 xl:px-24 bg-blue">
+<nav class="flex items-center justify-between px-2 py-2 text-white md:py-4 md:px-8 lg:px-12 xl:px-24 bg-blue">
     <a href="/">
-        <img src="%sveltekit.assets%/../img/logo-type-white.svg" alt="" class="h-8 md:h-12">
+        <img src="%sveltekit.assets%/../img/logo-type-white.svg" alt="" class="h-8 md:h-12 ms-2 md:ms-0">
     </a>
     <div class="hidden gap-12 md:flex">
         <a href="#vision">Vision</a>
         <a href="#mission">Mission</a>
         <a href="#team">Team</a>
     </div>
+    <div class="md:hidden">
+        <AnimatedHamburger {open} {onClick}/>
+    </div>
 </nav>
+<div class="px-4 text-white bg-blue">
+    {#if open}
+        <div transition:fly={{ y: -200, duration: 400 }} class="mx-auto">
+            <div class="flex justify-center w-full mb-1">
+                <a href="#vision" on:click={() => (open = false)}>Vision</a><br/>
+            </div>
+            <div class="flex justify-center w-full mb-1">
+                <a href="#mission" on:click={() => (open = false)}>Mission</a><br/>
+            </div>
+            <div class="flex justify-center w-full mb-1">
+                <a href="#team" on:click={() => (open = false)}>Team</a>
+            </div>
+            <hr class="mt-2"/>
+        </div>
+    {/if}
+</div>
 
 <div class="flex flex-col items-center gap-8 px-8 pt-8 pb-12 text-white md:flex-row lg:gap-16 lg:px-12 xl:px-48 bg-blue">
     <img src="%sveltekit.assets%/../img/logo-white.svg" alt="" class="w-64 lg:w-80">

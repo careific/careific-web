@@ -1,4 +1,7 @@
-<script>
+<script lang="ts">
+    import { fly } from 'svelte/transition'
+    import AnimatedHamburger from '$lib/AnimatedHamburger.svelte'
+    
     var selectedFeature = "tracker"
 
     let features = [
@@ -47,6 +50,13 @@
         }
     ];
 
+    //hamburger menu
+    export let open = false
+    export let onClick = (): void => {
+        open = !open
+    }
+
+    // carousel
     let currentFeatureIndex = 0;
     let currentConnectIndex = 0;
 
@@ -110,8 +120,8 @@
     };
 </script>
 
-<nav class="flex items-center justify-between px-4 pt-4 pb-8 text-white lg:px-12 xl:px-24 bg-blue">
-    <img src="%sveltekit.assets%/../img/logo-type-white.svg" alt="" class="h-8 md:h-12">
+<nav class="flex items-center justify-between px-2 py-2 text-white md:py-4 md:px-8 lg:px-12 xl:px-24 bg-blue">
+    <img src="%sveltekit.assets%/../img/logo-type-white.svg" alt="" class="h-8 md:h-12 ms-2 md:ms-0">
     <div class="hidden gap-12 md:flex">
         <a href="#what-is-careific">What is Careific</a>
         <a href="#features">Features</a>
@@ -119,7 +129,32 @@
         <a href="#story">Careific’s Story</a>
         <a href="#faq">FAQs</a>
     </div>
+    <div class="md:hidden">
+        <AnimatedHamburger {open} {onClick}/>
+    </div>
 </nav>
+<div class="px-4 text-white bg-blue">
+    {#if open}
+        <div transition:fly={{ y: -200, duration: 400 }} class="pb-4">
+            <div class="flex justify-center w-full mb-1">
+                <a href="#what-is-careific" on:click={() => (open = false)}>What is Careific</a><br/>
+            </div>
+            <div class="flex justify-center w-full mb-1">
+                <a href="#features" on:click={() => (open = false)}>Features</a><br/>
+            </div>
+            <div class="flex justify-center w-full mb-1">
+                <a href="#connect" on:click={() => (open = false)}>How to Connect</a>
+            </div>
+            <div class="flex justify-center w-full mb-1">
+                <a href="#story" on:click={() => (open = false)}>Careific’s Story</a>
+            </div>
+            <div class="flex justify-center w-full mb-1">
+                <a href="#faq" on:click={() => (open = false)}>FAQs</a>
+            </div>
+            <hr class="mt-2"/>
+        </div>
+    {/if}
+</div>
 
 <div class="items-center hidden grid-cols-3 gap-1 pt-8 -mt-1 text-white xl:gap-8 md:grid bg-blue">
     <div class="flex items-end justify-start mt-0 lg:mt-24">
@@ -425,5 +460,14 @@
   .slide {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+
+  .sidebar {
+    @apply bg-orange text-white h-screen w-64 fixed top-0 right-full transition-all ease-in-out duration-300 overflow-y-auto z-50;
+    transform: translateX(100%);
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
   }
 </style>
