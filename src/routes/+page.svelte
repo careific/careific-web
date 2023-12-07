@@ -14,27 +14,31 @@
     </div>
 </nav>
 
-<div class="items-center hidden grid-cols-3 gap-8 pt-8 text-white md:grid bg-blue">
-    <div class="flex items-end justify-start mt-24">
-        <img src="%sveltekit.assets%/../img/caregiver.svg" alt="" class="h-96">
+<div class="items-center hidden grid-cols-3 gap-1 pt-8 -mt-1 text-white xl:gap-8 md:grid bg-blue">
+    <div class="flex items-end justify-start mt-0 lg:mt-24">
+        <div class="flex items-end h-72 lg:h-96">
+            <img src="%sveltekit.assets%/../img/caregiver.svg" alt="" class="">
+        </div>
     </div>
     
-    <div class="flex items-start justify-center h-full mb-16">
+    <div class="flex items-start justify-center h-full lg:mb-16">
         <div class="">
             <h1 class="mb-1 text-5xl font-bold text-center lg:text-7xl">Careific</h1>
             <p class="mb-8 text-lg text-center lg:text-2xl">Monitoring Health and Nurturing Hearts</p>
             <a href="https://apps.apple.com/id/app/careific-monitor-your-senior/id6471642474" target="_blank">
-                <img src="%sveltekit.assets%/../img/app-store.svg" alt="" class="w-48 mx-auto">
+                <img src="%sveltekit.assets%/../img/app-store.svg" alt="" class="mx-auto w-36 lg:w-48">
             </a>
         </div>
     </div>
     
-    <div class="flex items-end justify-end mt-24">
-        <img src="%sveltekit.assets%/../img/senior.svg" alt="" class="h-96">
+    <div class="flex items-end justify-end mt-0 lg:mt-24">
+        <div class="flex items-end h-72 lg:h-96">
+            <img src="%sveltekit.assets%/../img/senior.svg" alt="" class="">
+        </div>
     </div>
 </div>
 <div class="items-center justify-center hidden mb-8 -mt-64 lg:flex">
-    <div class="flex items-center justify-center gap-8">
+    <div class="flex items-center justify-center gap-4 xl:gap-8">
         <img src="%sveltekit.assets%/../img/tracker-jumbotron.png" alt="" class="h-128">
         <img src="%sveltekit.assets%/../img/dashboard-jumbotron.png" alt="" class="h-128">
     </div>
@@ -56,7 +60,7 @@
     </div>
 </div>
 
-<div class="grid items-center grid-cols-1 gap-4 px-4 py-8 lg:py-12 md:grid-cols-2 lg:gap-12 md:px-8 lg:px-12 xl:px-24" id="what-is-careific">
+<div class="grid items-center grid-cols-1 gap-4 px-4 py-8 lg:py-12 md:grid-cols-2 lg:gap-8 xl:gap-12 md:px-8 lg:px-12 xl:px-24" id="what-is-careific">
     <img src="%sveltekit.assets%/../img/all-in-one.png" alt="" class="">
     <div>
         <h1 class="text-3xl font-bold text-center lg:text-4xl text-blue md:text-left">All-in-One Caregiving App</h1>
@@ -71,10 +75,10 @@
     <div class="flex items-center justify-center mb-8">
         <div>
             <h1 class="mb-2 text-3xl font-bold text-center lg:text-4xl text-blue">Enchanced Caregiving Experience</h1>
-            <p class="text-center md:text-lg md:px-32">Our caregiving app is designed with you in mind, offering a range of features to enhance your caregiving journey.</p>
+            <p class="text-center lg:text-lg md:px-32">Our caregiving app is designed with you in mind, offering a range of features to enhance your caregiving journey.</p>
         </div>
     </div>
-    <div class="grid items-center grid-cols-2 gap-8">
+    <div class="grid items-center grid-cols-2 gap-2 xl:gap-8">
         {#if selectedFeature == "tracker"}
             <img src="%sveltekit.assets%/../img/tracker.png" alt="" class="">
         {:else if selectedFeature == "emergency"}
@@ -88,25 +92,25 @@
         {/if}
 
         <div class="flex flex-col gap-4">
-            <button class="{selectedFeature == 'tracker' ? 'bg-blue' : 'bg-white'} border-2 border-blue p-4 rounded-lg cursor-pointer" on:click={() => (selectedFeature = "tracker")}>
-                <h2 class="text-3xl font-bold text-left {selectedFeature == 'tracker' ? 'text-white' : 'text-blue'}">Tracker</h2>
-                <p class="text-left {selectedFeature == 'tracker' ? 'text-white' : 'text-black'}">The capability to track essential information about their seniors, including location, heart rate, device state, and inactivity.</p>
+            <button class="{selectedFeature == 'tracker' ? 'bg-blue' : 'bg-white'} border-2 border-blue p-2 lg:p-4 rounded-lg cursor-pointer" on:click={() => (selectedFeature = "tracker")}>
+                <h2 class="text-xl lg:text-2xl xl:text-3xl font-bold text-left {selectedFeature == 'tracker' ? 'text-white' : 'text-blue'}">Tracker</h2>
+                <p class="text-sm xl:text-base text-left {selectedFeature == 'tracker' ? 'text-white' : 'text-black'}">The capability to track essential information about their seniors, including location, heart rate, device state, and inactivity.</p>
             </button>
-            <button class="{selectedFeature == 'emergency' ? 'bg-blue' : 'bg-white'} border-2 border-blue p-4 rounded-lg cursor-pointer" on:click={() => (selectedFeature = "emergency")}>
-                <h2 class="text-3xl font-bold text-left  {selectedFeature == 'emergency' ? 'text-white' : 'text-blue'}">Emergency</h2>
-                <p class="text-left {selectedFeature == 'emergency' ? 'text-white' : 'text-black'}">The emergency feature combines fall detection and an SOS button for immediate assistance, ensuring rapid response in critical situations.</p>
+            <button class="{selectedFeature == 'emergency' ? 'bg-blue' : 'bg-white'} border-2 border-blue p-2 lg:p-4 rounded-lg cursor-pointer" on:click={() => (selectedFeature = "emergency")}>
+                <h2 class="text-xl lg:text-2xl xl:text-3xl font-bold text-left  {selectedFeature == 'emergency' ? 'text-white' : 'text-blue'}">Emergency</h2>
+                <p class="text-sm xl:text-base text-left {selectedFeature == 'emergency' ? 'text-white' : 'text-black'}">The emergency feature combines fall detection and an SOS button for immediate assistance, ensuring rapid response in critical situations.</p>
             </button>
-            <button class="{selectedFeature == 'walkie-talkie' ? 'bg-blue' : 'bg-white'} border-2 border-blue p-4 rounded-lg cursor-pointer" on:click={() => (selectedFeature = "walkie-talkie")}>
-                <h2 class="text-3xl font-bold text-left  {selectedFeature == 'walkie-talkie' ? 'text-white' : 'text-blue'}">Walkie-Talkie</h2>
-                <p class="text-left {selectedFeature == 'walkie-talkie' ? 'text-white' : 'text-black'}">By simply pressing the button, it can transmit voice directly to the senior's phone, even if it's locked.</p>
+            <button class="{selectedFeature == 'walkie-talkie' ? 'bg-blue' : 'bg-white'} border-2 border-blue p-2 lg:p-4 rounded-lg cursor-pointer" on:click={() => (selectedFeature = "walkie-talkie")}>
+                <h2 class="text-xl lg:text-2xl xl:text-3xl font-bold text-left  {selectedFeature == 'walkie-talkie' ? 'text-white' : 'text-blue'}">Walkie-Talkie</h2>
+                <p class="text-sm xl:text-base text-left {selectedFeature == 'walkie-talkie' ? 'text-white' : 'text-black'}">By simply pressing the button, it can transmit voice directly to the senior's phone, even if it's locked.</p>
             </button>
-            <button class="{selectedFeature == 'routines' ? 'bg-blue' : 'bg-white'} border-2 border-blue p-4 rounded-lg cursor-pointer" on:click={() => (selectedFeature = "routines")}>
-                <h2 class="text-3xl font-bold text-left  {selectedFeature == 'routines' ? 'text-white' : 'text-blue'}">Routines</h2>
-                <p class="text-left {selectedFeature == 'routines' ? 'text-white' : 'text-black'}">Enhances the interactive display of seniors' schedules by adding medication and activity reminders in real-time. </p>
+            <button class="{selectedFeature == 'routines' ? 'bg-blue' : 'bg-white'} border-2 border-blue p-2 lg:p-4 rounded-lg cursor-pointer" on:click={() => (selectedFeature = "routines")}>
+                <h2 class="text-xl lg:text-2xl xl:text-3xl font-bold text-left  {selectedFeature == 'routines' ? 'text-white' : 'text-blue'}">Routines</h2>
+                <p class="text-sm xl:text-base text-left {selectedFeature == 'routines' ? 'text-white' : 'text-black'}">Enhances the interactive display of seniors' schedules by adding medication and activity reminders in real-time. </p>
             </button>
-            <button class="{selectedFeature == 'ai-consultation' ? 'bg-blue' : 'bg-white'} border-2 border-blue p-4 rounded-lg cursor-pointer" on:click={() => (selectedFeature = "ai-consultation")}>
-                <h2 class="text-3xl font-bold text-left  {selectedFeature == 'ai-consultation' ? 'text-white' : 'text-blue'}">AI Medical Consultation</h2>
-                <p class="text-left {selectedFeature == 'ai-consultation' ? 'text-white' : 'text-black'}">The provides suggestions and answers based on questions about senior’s condition.</p>
+            <button class="{selectedFeature == 'ai-consultation' ? 'bg-blue' : 'bg-white'} border-2 border-blue p-2 lg:p-4 rounded-lg cursor-pointer" on:click={() => (selectedFeature = "ai-consultation")}>
+                <h2 class="text-xl lg:text-2xl xl:text-3xl font-bold text-left  {selectedFeature == 'ai-consultation' ? 'text-white' : 'text-blue'}">AI Medical Consultation</h2>
+                <p class="text-sm xl:text-base text-left {selectedFeature == 'ai-consultation' ? 'text-white' : 'text-black'}">The provides suggestions and answers based on questions about senior’s condition.</p>
             </button>
         </div>
     </div>
@@ -116,7 +120,7 @@
     <div class="flex items-center justify-center mb-4">
         <div>
             <h1 class="mb-2 text-3xl font-bold text-center lg:text-4xl text-blue">Stay Connected with Your Seniors</h1>
-            <p class="text-center md:px-32 md:text-lg">Empower yourself to stay connected and safeguard the well-being of your beloved seniors.</p>
+            <p class="text-center md:px-32 lg:text-lg">Empower yourself to stay connected and safeguard the well-being of your beloved seniors.</p>
         </div>
     </div>
     <div class="grid grid-cols-3 gap-4 lg:gap-8">
@@ -132,7 +136,7 @@
                         <h1 class="text-4xl font-bold text-white">1</h1>
                     </div>
                 </div>
-                <h2 class="mx-4 mt-4 mb-2 text-xl font-bold text-center lg:text-2xl text-blue">Click The Add Button</h2>
+                <h2 class="mx-4 mt-4 mb-2 text-xl font-bold leading-tight text-center lg:text-2xl text-blue xl:leading-normal">Click The Add Button</h2>
                 <p class="mx-4 text-sm text-center lg:text-base">Navigate to the caregiver tracker view, select the senior's name at the top left, and then click 'Add' to effortlessly expand your caregiving network.</p>
             </div>
         </div>
@@ -148,7 +152,7 @@
                         <h1 class="text-4xl font-bold text-white">2</h1>
                     </div>
                 </div>
-                <h2 class="mx-4 mt-4 mb-2 text-xl font-bold text-center lg:text-2xl text-blue">Enter Your Senior’s Email</h2>
+                <h2 class="mx-4 mt-4 mb-2 text-xl font-bold leading-tight text-center lg:text-2xl text-blue xl:leading-normal">Enter Your Senior’s Email</h2>
                 <p class="mx-4 text-sm text-center lg:text-base">Input your senior's email, initiating an invitation process within the caregiver's view to connect them to the caregiving network.</p>
             </div>
         </div>
@@ -164,7 +168,7 @@
                         <h1 class="text-4xl font-bold text-white">3</h1>
                     </div>
                 </div>
-                <h2 class="mx-4 mt-4 mb-2 text-xl font-bold text-center lg:text-2xl text-blue">Accept Invitation</h2>
+                <h2 class="mx-4 mt-4 mb-2 text-xl font-bold leading-tight text-center lg:text-2xl text-blue xl:leading-normal">Accept Invitation</h2>
                 <p class="mx-4 text-sm text-center lg:text-base">Seniors receive and can easily accept the invitation in their view, ensuring their active participation and connection within the caregiving network.</p>
             </div>
         </div>
@@ -175,7 +179,7 @@
     <div class="flex items-center justify-center mb-8">
         <div>
             <h1 class="mb-2 text-3xl font-bold text-center lg:text-4xl">Story Behind Careific</h1>
-            <p class="text-center md:px-32 md:text-lg">Discover additional details about Careific's functionalities and its development process.</p>
+            <p class="text-center md:px-32 lg:text-lg">Discover additional details about Careific's functionalities and its development process.</p>
         </div>
     </div>
     <div class="flex items-center justify-center">
