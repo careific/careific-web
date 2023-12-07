@@ -208,7 +208,7 @@
         <h1 class="text-3xl font-bold text-center lg:text-4xl text-blue md:text-left">All-in-One Caregiving App</h1>
         <p class="mt-4 mb-6 leading-relaxed text-center lg:mb-8 lg:text-xl md:text-left">Introducing our all-encompassing Caregiving App, a complete solution prioritizing your loved ones' well-being. Track their location in real-time, monitor heart rate and device status for health updates and reliability assurance. It includes a range of safety features: inactivity tracking, fall detection, SOS button, and a walkie-talkie for seamless communication. Set routines reminders and access AI-powered medical consultations, ensuring comprehensive care and peace of mind.</p>
         <div class="flex items-center justify-center md:justify-start">
-            <a href="/about" class="px-4 py-2 font-semibold text-white transition rounded-md lg:text-lg lg:px-6 lg:py-3 bg-blue hover:bg-darkblue">Learn more</a>
+            <a href="/about" class="px-4 py-2 font-semibold text-white transition rounded-md lg:text-lg lg:px-6 lg:py-3 bg-blue hover:scale-105">Learn more</a>
         </div>
     </div>
 </div>
