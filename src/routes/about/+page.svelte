@@ -10,7 +10,7 @@
 
 <nav class="flex items-center justify-between px-2 py-2 text-white md:py-4 md:px-8 lg:px-12 xl:px-24 bg-blue">
     <a href="/">
-        <img src="%sveltekit.assets%/../img/logo-type-white.svg" alt="" class="h-8 md:h-12 ms-2 md:ms-0">
+        <img src="%sveltekit.assets%/../img/logo-type-white.svg" alt="" class="h-8 transition md:h-12 ms-2 md:ms-0 hover:scale-105">
     </a>
     <div class="hidden gap-12 lg:flex">
         <a href="#vision" class="transition hover:scale-105">Vision</a>
