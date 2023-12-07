@@ -13,9 +13,9 @@
         <img src="%sveltekit.assets%/../img/logo-type-white.svg" alt="" class="h-8 md:h-12 ms-2 md:ms-0">
     </a>
     <div class="hidden gap-12 lg:flex">
-        <a href="#vision">Vision</a>
-        <a href="#mission">Mission</a>
-        <a href="#team">Team</a>
+        <a href="#vision" class="transition hover:scale-105">Vision</a>
+        <a href="#mission" class="transition hover:scale-105">Mission</a>
+        <a href="#team" class="transition hover:scale-105">Team</a>
     </div>
     <div class="lg:hidden">
         <AnimatedHamburger {open} {onClick}/>

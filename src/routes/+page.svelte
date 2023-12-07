@@ -123,11 +123,11 @@
 <nav class="flex items-center justify-between px-2 py-2 text-white md:py-4 md:px-8 lg:px-12 xl:px-24 bg-blue">
     <img src="%sveltekit.assets%/../img/logo-type-white.svg" alt="" class="h-8 md:h-12 ms-2 md:ms-0">
     <div class="hidden gap-12 lg:flex">
-        <a href="#what-is-careific">What is Careific</a>
-        <a href="#features">Features</a>
-        <a href="#connect">How to Connect</a>
-        <a href="#story">Careific’s Story</a>
-        <a href="#faq">FAQs</a>
+        <a href="#what-is-careific" class="transition hover:scale-105">What is Careific</a>
+        <a href="#features" class="transition hover:scale-105">Features</a>
+        <a href="#connect" class="transition hover:scale-105">How to Connect</a>
+        <a href="#story" class="transition hover:scale-105">Careific’s Story</a>
+        <a href="#faq" class="transition hover:scale-105">FAQs</a>
     </div>
     <div class="lg:hidden">
         <AnimatedHamburger {open} {onClick}/>
