@@ -98,12 +98,12 @@
         <div class="flex flex-col items-center justify-center">
             <img src="%sveltekit.assets%/../img/diaz.png" alt="" class="w-48">
             <h2 class="mt-4 mb-1 text-2xl font-bold text-center xl:text-3xl text-blue">Diaz Abiyaksa Putra</h2>
-            <p class="text-center">UI Designer & Illustrator</p>
+            <p class="text-center">UI/UX Designer & Illustrator</p>
         </div>
         <div class="flex flex-col items-center justify-center">
             <img src="%sveltekit.assets%/../img/jeremy.png" alt="" class="w-48">
             <h2 class="mt-4 mb-1 text-2xl font-bold text-center xl:text-3xl text-blue">Jeremy Ernesto S. W.</h2>
-            <p class="text-center">UI Designer</p>
+            <p class="text-center">UI/UX Designer</p>
         </div>
     </div>
 </div>
