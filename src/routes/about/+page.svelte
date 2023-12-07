@@ -12,18 +12,18 @@
     <a href="/">
         <img src="%sveltekit.assets%/../img/logo-type-white.svg" alt="" class="h-8 md:h-12 ms-2 md:ms-0">
     </a>
-    <div class="hidden gap-12 md:flex">
+    <div class="hidden gap-12 lg:flex">
         <a href="#vision">Vision</a>
         <a href="#mission">Mission</a>
         <a href="#team">Team</a>
     </div>
-    <div class="md:hidden">
+    <div class="lg:hidden">
         <AnimatedHamburger {open} {onClick}/>
     </div>
 </nav>
 <div class="px-4 text-white bg-blue">
     {#if open}
-        <div transition:fly={{ y: -200, duration: 400 }} class="mx-auto">
+        <div transition:fly={{ y: -200, duration: 400 }} class="">
             <div class="flex justify-center w-full mb-1">
                 <a href="#vision" on:click={() => (open = false)}>Vision</a><br/>
             </div>

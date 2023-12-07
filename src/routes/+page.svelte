@@ -122,14 +122,14 @@
 
 <nav class="flex items-center justify-between px-2 py-2 text-white md:py-4 md:px-8 lg:px-12 xl:px-24 bg-blue">
     <img src="%sveltekit.assets%/../img/logo-type-white.svg" alt="" class="h-8 md:h-12 ms-2 md:ms-0">
-    <div class="hidden gap-12 md:flex">
+    <div class="hidden gap-12 lg:flex">
         <a href="#what-is-careific">What is Careific</a>
         <a href="#features">Features</a>
         <a href="#connect">How to Connect</a>
         <a href="#story">Careific’s Story</a>
         <a href="#faq">FAQs</a>
     </div>
-    <div class="md:hidden">
+    <div class="lg:hidden">
         <AnimatedHamburger {open} {onClick}/>
     </div>
 </nav>
@@ -156,7 +156,7 @@
     {/if}
 </div>
 
-<div class="items-center hidden grid-cols-3 gap-1 pt-8 -mt-1 text-white xl:gap-8 md:grid bg-blue">
+<div class="items-center hidden grid-cols-3 gap-1 pt-8 -mt-1 text-white md:pt-4 lg:pt-12 xl:gap-8 md:grid bg-blue">
     <div class="flex items-end justify-start mt-0 lg:mt-24">
         <div class="flex items-end h-72 lg:h-96">
             <img src="%sveltekit.assets%/../img/caregiver.svg" alt="" class="">
@@ -208,7 +208,7 @@
         <h1 class="text-3xl font-bold text-center lg:text-4xl text-blue md:text-left">All-in-One Caregiving App</h1>
         <p class="mt-4 mb-6 leading-relaxed text-center lg:mb-8 lg:text-xl md:text-left">Introducing our all-encompassing Caregiving App, a complete solution prioritizing your loved ones' well-being. Track their location in real-time, monitor heart rate and device status for health updates and reliability assurance. It includes a range of safety features: inactivity tracking, fall detection, SOS button, and a walkie-talkie for seamless communication. Set routines reminders and access AI-powered medical consultations, ensuring comprehensive care and peace of mind.</p>
         <div class="flex items-center justify-center md:justify-start">
-            <a href="/about" class="px-4 py-2 text-lg font-semibold text-white transition rounded-md lg:px-6 lg:py-3 bg-blue hover:bg-darkblue">Learn more</a>
+            <a href="/about" class="px-4 py-2 font-semibold text-white transition rounded-md lg:text-lg lg:px-6 lg:py-3 bg-blue hover:bg-darkblue">Learn more</a>
         </div>
     </div>
 </div>
@@ -289,7 +289,7 @@
     </div>
 </div>
 
-<div class="py-8 lg:py-12 md:px-8 lg:px-12 xl:px-24" id="connect">
+<div class="pt-8 lg:py-12 md:px-8 lg:px-12 xl:px-24" id="connect">
     <div class="flex items-center justify-center mb-4">
         <div>
             <h1 class="px-4 mb-2 text-3xl font-bold text-center lg:text-4xl text-blue md:px-0">Stay Connected with Your Seniors</h1>
