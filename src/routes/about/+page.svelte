@@ -1,6 +1,6 @@
 <script>
     // hamburger menu
-    // import Hamburger from "hamburger-menu-svelte";
+    // import Hamburger from "svelte-hamburgers@2";
 
     // let open;
 </script>
