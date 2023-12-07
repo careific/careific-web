@@ -392,7 +392,7 @@
         </div>
     </div>
     <div class="flex items-center justify-center">
-        <div class="w-full md:px-8 lg:px-12 xl:px-24">
+        <div class="w-full md:px-8 lg:px-12 xl:px-24 reveal-bottom">
             <iframe style="width: 100%; aspect-ratio: 16/9;" src="https://www.youtube.com/embed/yAezFvNB-WI?si=S-XbUr7einn80AU6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </div>
@@ -400,7 +400,7 @@
 
 <div class="px-4 py-8 lg:py-12 md:px-8 lg:px-12 xl:px-24" id="faq">
     <h1 class="mb-8 text-3xl font-bold text-center lg:text-4xl text-blue md:text-left">Frequently Asked Questions</h1>
-    <div class="grid grid-cols-1 gap-8 lg:gap-12 md:grid-cols-2 lg:grid-cols-3">
+    <div class="grid grid-cols-1 gap-8 lg:gap-12 md:grid-cols-2 lg:grid-cols-3 reveal-bottom">
         <div>
             <h2 class="mb-2 text-xl font-bold lg:text-2xl text-blue">What devices do I need to use Careific?</h2>
             <p>To use Careific, seniors require an Apple Watch and an iPhone, while caregivers can utilize the app solely on an iPhone. The minimum requirements include iOS 17.0 for iPhones and WatchOS 10.0 for Apple Watches.</p>
