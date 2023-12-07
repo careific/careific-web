@@ -1,6 +1,8 @@
 <section class="bg-white">
     <div class="px-4 md:px-8 lg:px-12 xl:px-24">
-        <img src="%sveltekit.assets%/../img/logo-type-blue.svg" alt="" class="h-16 pt-4">
+        <a href="/">
+            <img src="%sveltekit.assets%/../img/logo-type-blue.svg" alt="" class="h-16 pt-4">
+        </a>
     </div>
 
     <div class='px-4 py-8 mx-auto md:px-8 lg:py-12 lg:px-12 xl:px-24'>

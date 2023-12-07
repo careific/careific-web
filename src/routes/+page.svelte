@@ -41,7 +41,7 @@
 </div>
 
 <!-- Phone Only -->
-<div class="px-4 text-white bg-blue md:hidden">
+<div class="px-2 text-white bg-blue md:hidden">
     <div class="flex items-start justify-center h-full mb-8">
         <div class="">
             <h1 class="mb-1 text-4xl font-bold text-center">Careific</h1>
@@ -52,7 +52,7 @@
         </div>
     </div>
     <div class="flex items-center justify-center">
-        <img src="%sveltekit.assets%/../img/senior.svg" alt="" class="">
+        <img src="%sveltekit.assets%/../img/family.svg" alt="" class="">
     </div>
 </div>
 

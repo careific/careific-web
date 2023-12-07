@@ -17,7 +17,7 @@
 </nav>
 
 <div class="flex flex-col items-center gap-8 px-8 pt-8 pb-12 text-white md:flex-row lg:gap-16 lg:px-12 xl:px-48 bg-blue">
-    <img src="%sveltekit.assets%/../img/logo-white.svg" alt="" class="w-80">
+    <img src="%sveltekit.assets%/../img/logo-white.svg" alt="" class="w-64 md:w-80">
     <div>
         <h1 class="mb-4 text-4xl font-bold text-center lg:text-5xl md:text-left">Careific</h1>
         <p class="text-center lg:text-xl md:text-left">Careific is the ultimate solution for caregivers like you, providing simple, practical, and user-friendly features. It’s the all-in-one app designed to monitor your seniors effectively using an iPhone and an Apple Watch. Careific detects falls and abnormal heart rates, sends reminders for routines and medications, enables instant communication in emergencies, allows real-time location checking, and provides prompt alerts.</p>
