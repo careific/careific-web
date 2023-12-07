@@ -159,7 +159,7 @@
 <div class="items-center hidden grid-cols-3 gap-1 pt-8 -mt-1 text-white md:pt-4 lg:pt-12 xl:gap-8 md:grid bg-blue">
     <div class="flex items-end justify-start mt-0 lg:mt-24">
         <div class="flex items-end h-72 lg:h-96">
-            <img src="%sveltekit.assets%/../img/caregiver.svg" alt="" class="">
+            <img src="%sveltekit.assets%/../img/caregiver.svg" alt="" class="reveal-left">
         </div>
     </div>
     
@@ -175,11 +175,11 @@
     
     <div class="flex items-end justify-end mt-0 lg:mt-24">
         <div class="flex items-end h-72 lg:h-96">
-            <img src="%sveltekit.assets%/../img/senior.svg" alt="" class="">
+            <img src="%sveltekit.assets%/../img/senior.svg" alt="" class="reveal-right">
         </div>
     </div>
 </div>
-<div class="items-center justify-center hidden mb-8 -mt-64 lg:flex">
+<div class="items-center justify-center hidden mb-8 -mt-64 lg:flex reveal-bottom">
     <div class="flex items-center justify-center gap-4 xl:gap-8">
         <img src="%sveltekit.assets%/../img/tracker-jumbotron.png" alt="" class="h-128">
         <img src="%sveltekit.assets%/../img/dashboard-jumbotron.png" alt="" class="h-128">
@@ -198,13 +198,13 @@
         </div>
     </div>
     <div class="flex items-center justify-center">
-        <img src="%sveltekit.assets%/../img/family.svg" alt="" class="">
+        <img src="%sveltekit.assets%/../img/family.svg" alt="" class="reveal-right">
     </div>
 </div>
 
 <div class="grid items-center grid-cols-1 gap-4 px-4 py-8 lg:py-12 md:grid-cols-2 lg:gap-8 xl:gap-12 md:px-8 lg:px-12 xl:px-24" id="what-is-careific">
-    <img src="%sveltekit.assets%/../img/all-in-one.png" alt="" class="">
-    <div>
+    <img src="%sveltekit.assets%/../img/all-in-one.png" alt="" class="reveal-left">
+    <div class="reveal-right">
         <h1 class="text-3xl font-bold text-center lg:text-4xl text-blue md:text-left">All-in-One Caregiving App</h1>
         <p class="mt-4 mb-6 leading-relaxed text-center lg:mb-8 lg:text-xl md:text-left">Introducing our all-encompassing Caregiving App, a complete solution prioritizing your loved ones' well-being. Track their location in real-time, monitor heart rate and device status for health updates and reliability assurance. It includes a range of safety features: inactivity tracking, fall detection, SOS button, and a walkie-talkie for seamless communication. Set routines reminders and access AI-powered medical consultations, ensuring comprehensive care and peace of mind.</p>
         <div class="flex items-center justify-center md:justify-start">
@@ -215,7 +215,7 @@
 
 <div class="px-4 py-8 lg:py-12 md:px-8 lg:px-12 xl:px-24" id="features">
     <div class="flex items-center justify-center mb-8">
-        <div>
+        <div class="">
             <h1 class="mb-2 text-3xl font-bold text-center lg:text-4xl text-blue">Enchanced Caregiving Experience</h1>
             <p class="text-center lg:text-lg md:px-32">Our caregiving app is designed with you in mind, offering a range of features to enhance your caregiving journey.</p>
         </div>
@@ -223,7 +223,7 @@
 
     <div class="items-center hidden grid-cols-2 gap-2 md:grid xl:gap-8">
         {#if selectedFeature == "tracker"}
-            <img src="%sveltekit.assets%/../img/tracker.png" alt="" class="">
+            <img src="%sveltekit.assets%/../img/tracker.png" alt="" class="reveal-left">
         {:else if selectedFeature == "emergency"}
             <img src="%sveltekit.assets%/../img/emergency.png" alt="" class="">
         {:else if selectedFeature == "walkie-talkie"}
@@ -234,7 +234,7 @@
             <img src="%sveltekit.assets%/../img/ai-consultation.png" alt="" class="">
         {/if}
 
-        <div class="flex flex-col gap-4">
+        <div class="flex flex-col gap-4 reveal-right">
             <button class="{selectedFeature == 'tracker' ? 'bg-blue' : 'bg-white'} border-2 border-blue p-2 lg:p-4 rounded-lg cursor-pointer" on:click={() => (selectedFeature = "tracker")}>
                 <h2 class="text-xl lg:text-2xl xl:text-3xl font-bold text-left {selectedFeature == 'tracker' ? 'text-white' : 'text-blue'}">Tracker</h2>
                 <p class="text-sm xl:text-base text-left {selectedFeature == 'tracker' ? 'text-white' : 'text-black'}">The capability to track essential information about their seniors, including location, heart rate, device state, and inactivity.</p>
@@ -259,7 +259,7 @@
     </div>
 
     <div 
-        class="relative overflow-hidden md:hidden"
+        class="relative overflow-hidden md:hidden reveal-left"
         on:touchstart={handleFeatureTouchStart}
         on:touchend={handleFeatureTouchEnd}
     >
@@ -289,14 +289,14 @@
     </div>
 </div>
 
-<div class="pt-8 lg:py-12 md:px-8 lg:px-12 xl:px-24" id="connect">
+<div class="pt-8 pb-12 lg:py-12 md:px-8 lg:px-12 xl:px-24 md:pb-0" id="connect">
     <div class="flex items-center justify-center mb-4">
         <div>
             <h1 class="px-4 mb-2 text-3xl font-bold text-center lg:text-4xl text-blue md:px-0">Stay Connected with Your Seniors</h1>
             <p class="px-4 text-center md:px-32 lg:text-lg">Empower yourself to stay connected and safeguard the well-being of your beloved seniors.</p>
         </div>
     </div>
-    <div class="hidden grid-cols-3 gap-4 md:grid lg:gap-8">
+    <div class="hidden grid-cols-3 gap-4 md:grid lg:gap-8 reveal-bottom">
         <div class="rounded-xl h-128">
             <div class="bg-blue h-1/3 lg:h-1/2 rounded-t-xl">
                 <div class="flex items-center justify-center h-full p-4 pb-10">
@@ -348,7 +348,7 @@
     </div>
 
     <div 
-        class="relative overflow-hidden md:hidden"
+        class="relative overflow-hidden md:hidden reveal-right"
         on:touchstart={handleConnectTouchStart}
         on:touchend={handleConnectTouchEnd}
     >
