@@ -1,11 +1,118 @@
 <script>
-    // features
     var selectedFeature = "tracker"
+
+    let features = [
+        {
+            image: '%sveltekit.assets%/../img/tracker.png',
+            title: 'Tracker',
+            content: 'The capability to track essential information about their seniors, including location, heart rate, device state, and inactivity.'
+        },
+        {
+            image: '%sveltekit.assets%/../img/emergency.png',
+            title: 'Emergency',
+            content: 'The emergency feature combines fall detection and an SOS button for immediate assistance, ensuring rapid response in critical situations.'
+        },
+        {
+            image: '%sveltekit.assets%/../img/walkie-talkie.png',
+            title: 'Walkie-Talkie',
+            content: 'By simply pressing the button, it can transmit voice directly to the senior’s phone, even if it’s locked.'
+        },
+        {
+            image: '%sveltekit.assets%/../img/routines.png',
+            title: 'Routines',
+            content: 'Enhances the interactive display of senior’s schedules by adding medication and activity reminders in real-time. '
+        },
+        {
+            image: '%sveltekit.assets%/../img/ai-consultation.png',
+            title: 'AI Medical Consultation',
+            content: 'The provides suggestions and answers based on questions about senior’s condition.'
+        },
+    ];
+
+    let connects = [
+        {
+            image: '%sveltekit.assets%/../img/click.svg',
+            title: 'Click The Add Button',
+            content: 'Navigate to the caregiver tracker view, select the senior’s name at the top left, and then click ’Add’ to effortlessly expand your caregiving network.'
+        },
+        {
+            image: '%sveltekit.assets%/../img/enter.svg',
+            title: 'Enter Your Senior’s Email',
+            content: 'Input your senior’s email, initiating an invitation process within the caregiver’s view to connect them to the caregiving network.'
+        },
+        {
+            image: '%sveltekit.assets%/../img/accept.svg',
+            title: 'Accept Invitation',
+            content: 'Seniors receive and can easily accept the invitation in their view, ensuring their active participation and connection within the caregiving network.'
+        }
+    ];
+
+    let currentFeatureIndex = 0;
+    let currentConnectIndex = 0;
+
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    const handleFeatureTouchStart = (e) => {
+        touchStartX = e.touches[0].clientX;
+    };
+
+    const handleFeatureTouchEnd = (e) => {
+        touchEndX = e.changedTouches[0].clientX;
+        handleFeatureSwipe();
+    };
+
+    const handleFeatureSwipe = () => {
+        const threshold = 30; // Minimum swipe distance to trigger a change
+
+        const deltaX = touchEndX - touchStartX;
+        if (deltaX > threshold) {
+        previousFeatureSlide();
+        } else if (deltaX < -threshold) {
+        nextFeatureSlide();
+        }
+    };
+
+    const nextFeatureSlide = () => {
+        currentFeatureIndex = currentFeatureIndex === 4 ? currentFeatureIndex : currentFeatureIndex + 1;
+    };
+
+    const previousFeatureSlide = () => {
+        currentFeatureIndex = currentFeatureIndex === 0 ? currentFeatureIndex : currentFeatureIndex - 1;
+    };
+
+    const handleConnectTouchStart = (e) => {
+        touchStartX = e.touches[0].clientX;
+    };
+
+    const handleConnectTouchEnd = (e) => {
+        touchEndX = e.changedTouches[0].clientX;
+        handleConnectSwipe();
+    };
+
+    const handleConnectSwipe = () => {
+        const threshold = 30; // Minimum swipe distance to trigger a change
+
+        const deltaX = touchEndX - touchStartX;
+        if (deltaX > threshold) {
+        previousConnectSlide();
+        } else if (deltaX < -threshold) {
+        nextConnectSlide();
+        }
+    };
+
+    const nextConnectSlide = () => {
+        currentConnectIndex = currentConnectIndex === 2 ? currentConnectIndex : currentConnectIndex + 1;
+    };
+
+    const previousConnectSlide = () => {
+        currentConnectIndex = currentConnectIndex === 0 ? currentConnectIndex : currentConnectIndex - 1;
+    };
 </script>
 
 <nav class="flex items-center justify-between px-4 pt-4 pb-8 text-white lg:px-12 xl:px-24 bg-blue">
     <img src="%sveltekit.assets%/../img/logo-type-white.svg" alt="" class="h-8 md:h-12">
-    <div class="flex gap-12">
+    <div class="hidden gap-12 md:flex">
         <a href="#what-is-careific">What is Careific</a>
         <a href="#features">Features</a>
         <a href="#connect">How to Connect</a>
@@ -44,7 +151,7 @@
     </div>
 </div>
 
-<!-- Phone Only -->
+<!-- Phone Only Jumbotron -->
 <div class="px-2 text-white bg-blue md:hidden">
     <div class="flex items-start justify-center h-full mb-8">
         <div class="">
@@ -78,7 +185,8 @@
             <p class="text-center lg:text-lg md:px-32">Our caregiving app is designed with you in mind, offering a range of features to enhance your caregiving journey.</p>
         </div>
     </div>
-    <div class="grid items-center grid-cols-2 gap-2 xl:gap-8">
+
+    <div class="items-center hidden grid-cols-2 gap-2 md:grid xl:gap-8">
         {#if selectedFeature == "tracker"}
             <img src="%sveltekit.assets%/../img/tracker.png" alt="" class="">
         {:else if selectedFeature == "emergency"}
@@ -114,16 +222,46 @@
             </button>
         </div>
     </div>
-</div>
 
-<div class="px-4 py-8 lg:py-12 md:px-8 lg:px-12 xl:px-24" id="connect">
-    <div class="flex items-center justify-center mb-4">
-        <div>
-            <h1 class="mb-2 text-3xl font-bold text-center lg:text-4xl text-blue">Stay Connected with Your Seniors</h1>
-            <p class="text-center md:px-32 lg:text-lg">Empower yourself to stay connected and safeguard the well-being of your beloved seniors.</p>
+    <div 
+        class="relative overflow-hidden md:hidden"
+        on:touchstart={handleFeatureTouchStart}
+        on:touchend={handleFeatureTouchEnd}
+    >
+        <div class="carousel" style="transform: translateX(-{currentFeatureIndex * 100}%)">
+            {#each features as feature, index}
+            <div class="slide" class:opacity={currentFeatureIndex === index ? '100' : '0'}>
+                <img
+                src={feature.image}
+                alt={`Slide ${index + 1}`}
+                class="w-64 mx-auto"
+                />
+
+                <h2 class="mt-4 text-2xl font-bold text-center text-blue">{feature.title}</h2>
+                <p class="text-sm text-center">{feature.content}</p>
+            </div>
+            {/each}
+        </div>
+        <div class="flex justify-center">
+            <div class="flex gap-2 mt-4">
+                <div class="w-2 h-2 rounded-full bg-blue {currentFeatureIndex == 0 ? 'opacity-100' : 'opacity-50'} transition"></div>
+                <div class="w-2 h-2 rounded-full bg-blue {currentFeatureIndex == 1 ? 'opacity-100' : 'opacity-50'} transition"></div>
+                <div class="w-2 h-2 rounded-full bg-blue {currentFeatureIndex == 2 ? 'opacity-100' : 'opacity-50'} transition"></div>
+                <div class="w-2 h-2 rounded-full bg-blue {currentFeatureIndex == 3 ? 'opacity-100' : 'opacity-50'} transition"></div>
+                <div class="w-2 h-2 rounded-full bg-blue {currentFeatureIndex == 4 ? 'opacity-100' : 'opacity-50'} transition"></div>
+            </div>
         </div>
     </div>
-    <div class="grid grid-cols-3 gap-4 lg:gap-8">
+</div>
+
+<div class="py-8 lg:py-12 md:px-8 lg:px-12 xl:px-24" id="connect">
+    <div class="flex items-center justify-center mb-4">
+        <div>
+            <h1 class="px-4 mb-2 text-3xl font-bold text-center lg:text-4xl text-blue md:px-0">Stay Connected with Your Seniors</h1>
+            <p class="px-4 text-center md:px-32 lg:text-lg">Empower yourself to stay connected and safeguard the well-being of your beloved seniors.</p>
+        </div>
+    </div>
+    <div class="hidden grid-cols-3 gap-4 md:grid lg:gap-8">
         <div class="rounded-xl h-128">
             <div class="bg-blue h-1/3 lg:h-1/2 rounded-t-xl">
                 <div class="flex items-center justify-center h-full p-4 pb-10">
@@ -170,6 +308,42 @@
                 </div>
                 <h2 class="mx-4 mt-4 mb-2 text-xl font-bold leading-tight text-center lg:text-2xl text-blue xl:leading-normal">Accept Invitation</h2>
                 <p class="mx-4 text-sm text-center lg:text-base">Seniors receive and can easily accept the invitation in their view, ensuring their active participation and connection within the caregiving network.</p>
+            </div>
+        </div>
+    </div>
+
+    <div 
+        class="relative overflow-hidden md:hidden"
+        on:touchstart={handleConnectTouchStart}
+        on:touchend={handleConnectTouchEnd}
+    >
+        <div class="carousel" style="transform: translateX(-{currentConnectIndex * 100}%)">
+            {#each connects as connect, index}
+            <div class="px-4 slide" class:opacity={currentConnectIndex === index ? '100' : '0'}>
+                <div class="rounded-xl h-96">
+                    <div class="bg-blue h-1/2 rounded-t-xl">
+                        <div class="flex items-center justify-center h-full p-4 pb-8">
+                            <img src={connect.image} alt="" class="max-h-36">
+                        </div>
+                    </div>
+                    <div class="border-b-2 border-x-2 h-1/2 border-gray rounded-b-xl">
+                        <div class="flex items-center justify-center">
+                            <div class="flex items-center justify-center w-12 h-12 -mt-6 rounded-full bg-orange">
+                                <h1 class="text-3xl font-bold text-white">{index+1}</h1>
+                            </div>
+                        </div>
+                        <h2 class="mx-4 mt-2 mb-2 text-2xl font-bold leading-tight text-center text-blue">{connect.title}</h2>
+                        <p class="mx-4 text-sm text-center">{connect.content}</p>
+                    </div>
+                </div>
+            </div>
+            {/each}
+        </div>
+        <div class="flex justify-center">
+            <div class="flex gap-2 mt-4">
+                <div class="w-2 h-2 rounded-full bg-blue {currentConnectIndex == 0 ? 'opacity-100' : 'opacity-50'} transition"></div>
+                <div class="w-2 h-2 rounded-full bg-blue {currentConnectIndex == 1 ? 'opacity-100' : 'opacity-50'} transition"></div>
+                <div class="w-2 h-2 rounded-full bg-blue {currentConnectIndex == 2 ? 'opacity-100' : 'opacity-50'} transition"></div>
             </div>
         </div>
     </div>
@@ -241,3 +415,15 @@
         <p class="text-sm text-blue">© Copyright Careific 2023</p>
     </div>
 </footer>
+
+<style>
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+
+  .slide {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+</style>
