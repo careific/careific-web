@@ -1,7 +1,7 @@
 <section class="bg-white">
     <div class="px-4 md:px-8 lg:px-12 xl:px-24">
         <a href="/">
-            <img src="%sveltekit.assets%/../img/logo-type-blue.svg" alt="" class="h-16 pt-4">
+            <img src="%sveltekit.assets%/../img/logo-type-blue.png" alt="" class="h-16 pt-4">
         </a>
     </div>
 
@@ -109,7 +109,7 @@
 <footer class="px-4 py-4 pt-12 md:px-8 lg:px-12 xl:px-24">
     <div class="flex flex-col items-center justify-between gap-4 md:items-end md:flex-row">
         <div class="flex flex-col items-center md:items-start">
-            <img src="%sveltekit.assets%/../img/logo-type-blue.svg" alt="" class="h-12 mb-2 md:h-16">
+            <img src="%sveltekit.assets%/../img/logo-type-blue.png" alt="" class="h-12 mb-2 md:h-16">
             <div class="text-blue">
                 <a href="/" class="mr-8">Home</a>
                 <a href="/about">About</a>

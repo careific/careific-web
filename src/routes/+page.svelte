@@ -34,17 +34,17 @@
 
     let connects = [
         {
-            image: '%sveltekit.assets%/../img/click.svg',
+            image: '%sveltekit.assets%/../img/click.png',
             title: 'Click The Add Button',
             content: 'Navigate to the caregiver tracker view, select the senior’s name at the top left, and then click ’Add’ to effortlessly expand your caregiving network.'
         },
         {
-            image: '%sveltekit.assets%/../img/enter.svg',
+            image: '%sveltekit.assets%/../img/enter.png',
             title: 'Enter Your Senior’s Email',
             content: 'Input your senior’s email, initiating an invitation process within the caregiver’s view to connect them to the caregiving network.'
         },
         {
-            image: '%sveltekit.assets%/../img/accept.svg',
+            image: '%sveltekit.assets%/../img/accept.png',
             title: 'Accept Invitation',
             content: 'Seniors receive and can easily accept the invitation in their view, ensuring their active participation and connection within the caregiving network.'
         }
@@ -121,7 +121,7 @@
 </script>
 
 <nav class="flex items-center justify-between px-2 py-2 text-white md:py-4 md:px-8 lg:px-12 xl:px-24 bg-blue">
-    <img src="%sveltekit.assets%/../img/logo-type-white.svg" alt="" class="h-8 md:h-12 ms-2 md:ms-0">
+    <img src="%sveltekit.assets%/../img/logo-type-white.png" alt="" class="h-8 md:h-12 ms-2 md:ms-0">
     <div class="hidden gap-12 lg:flex">
         <a href="#what-is-careific" class="transition hover:scale-105">What is Careific</a>
         <a href="#features" class="transition hover:scale-105">Features</a>
@@ -159,7 +159,7 @@
 <div class="items-center hidden grid-cols-3 gap-1 pt-8 -mt-1 text-white md:pt-4 lg:pt-12 xl:gap-8 md:grid bg-blue">
     <div class="flex items-end justify-start mt-0 lg:mt-24">
         <div class="flex items-end h-72 lg:h-96">
-            <img src="%sveltekit.assets%/../img/caregiver.svg" alt="" class="reveal-left">
+            <img src="%sveltekit.assets%/../img/caregiver.png" alt="" class="reveal-left">
         </div>
     </div>
     
@@ -168,14 +168,14 @@
             <h1 class="mb-1 text-5xl font-bold text-center lg:text-7xl">Careific</h1>
             <p class="mb-8 text-lg text-center lg:text-2xl">Monitoring Health and Nurturing Hearts</p>
             <a href="https://apps.apple.com/id/app/careific-monitor-your-senior/id6471642474" target="_blank">
-                <img src="%sveltekit.assets%/../img/app-store.svg" alt="" class="mx-auto transition w-36 lg:w-48 hover:scale-105">
+                <img src="%sveltekit.assets%/../img/app-store.png" alt="" class="mx-auto transition w-36 lg:w-48 hover:scale-105">
             </a>
         </div>
     </div>
     
     <div class="flex items-end justify-end mt-0 lg:mt-24">
         <div class="flex items-end h-72 lg:h-96">
-            <img src="%sveltekit.assets%/../img/senior.svg" alt="" class="reveal-right">
+            <img src="%sveltekit.assets%/../img/senior.png" alt="" class="reveal-right">
         </div>
     </div>
 </div>
@@ -193,12 +193,12 @@
             <h1 class="mb-1 text-4xl font-bold text-center">Careific</h1>
             <p class="mb-4 text-center">Monitoring Health and Nurturing Hearts</p>
             <a href="https://apps.apple.com/id/app/careific-monitor-your-senior/id6471642474" target="_blank">
-                <img src="%sveltekit.assets%/../img/app-store.svg" alt="" class="mx-auto w-36">
+                <img src="%sveltekit.assets%/../img/app-store.png" alt="" class="mx-auto w-36">
             </a>
         </div>
     </div>
     <div class="flex items-center justify-center">
-        <img src="%sveltekit.assets%/../img/family.svg" alt="" class="reveal-right">
+        <img src="%sveltekit.assets%/../img/family.png" alt="" class="reveal-right">
     </div>
 </div>
 
@@ -300,7 +300,7 @@
         <div class="rounded-xl h-128">
             <div class="bg-blue h-1/3 lg:h-1/2 rounded-t-xl">
                 <div class="flex items-center justify-center h-full p-4 pb-10">
-                    <img src="%sveltekit.assets%/../img/click.svg" alt="" class="max-h-48">
+                    <img src="%sveltekit.assets%/../img/click.png" alt="" class="max-h-48">
                 </div>
             </div>
             <div class="border-b-2 border-x-2 h-1/2 border-gray rounded-b-xl">
@@ -316,7 +316,7 @@
         <div class="rounded-xl h-128">
             <div class="bg-blue h-1/3 lg:h-1/2 rounded-t-xl">
                 <div class="flex items-center justify-center h-full p-4 pb-10">
-                    <img src="%sveltekit.assets%/../img/enter.svg" alt="" class="max-h-48">
+                    <img src="%sveltekit.assets%/../img/enter.png" alt="" class="max-h-48">
                 </div>
             </div>
             <div class="border-b-2 border-x-2 h-1/2 border-gray rounded-b-xl">
@@ -332,7 +332,7 @@
         <div class="rounded-xl h-128">
             <div class="bg-blue h-1/3 lg:h-1/2 rounded-t-xl">
                 <div class="flex items-center justify-center h-full p-4 pb-10">
-                    <img src="%sveltekit.assets%/../img/accept.svg" alt="" class="max-h-48">
+                    <img src="%sveltekit.assets%/../img/accept.png" alt="" class="max-h-48">
                 </div>
             </div>
             <div class="border-b-2 border-x-2 h-1/2 border-gray rounded-b-xl">
@@ -431,7 +431,7 @@
 <footer class="px-4 py-4 pt-12 md:px-8 lg:px-12 xl:px-24">
     <div class="flex flex-col items-center justify-between gap-4 md:items-end md:flex-row">
         <div class="flex flex-col items-center md:items-start">
-            <img src="%sveltekit.assets%/../img/logo-type-blue.svg" alt="" class="h-12 mb-2 md:h-16">
+            <img src="%sveltekit.assets%/../img/logo-type-blue.png" alt="" class="h-12 mb-2 md:h-16">
             <div class="text-blue">
                 <a href="/about" class="mr-8">About</a>
                 <a href="/privacy-policy">Privacy Policy</a>
@@ -460,14 +460,5 @@
   .slide {
     flex: 0 0 100%;
     max-width: 100%;
-  }
-
-  .sidebar {
-    @apply bg-orange text-white h-screen w-64 fixed top-0 right-full transition-all ease-in-out duration-300 overflow-y-auto z-50;
-    transform: translateX(100%);
-  }
-
-  .sidebar.active {
-    transform: translateX(0);
   }
 </style>
