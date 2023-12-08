@@ -1,7 +1,7 @@
 <section class="bg-white">
     <div class="px-4 md:px-8 lg:px-12 xl:px-24">
         <a href="/">
-            <img src="https://juju222.sgp1.cdn.digitaloceanspaces.com/careific/logo-type-blue.png" alt="" class="h-16 pt-4">
+            <img src="https://juju222.sgp1.cdn.digitaloceanspaces.com/careific/logo-type-blue.webp" alt="" class="h-16 pt-4">
         </a>
     </div>
 
@@ -109,14 +109,14 @@
 <footer class="px-4 py-4 pt-12 md:px-8 lg:px-12 xl:px-24">
     <div class="flex flex-col items-center justify-between gap-4 md:items-end md:flex-row">
         <div class="flex flex-col items-center md:items-start">
-            <img src="https://juju222.sgp1.cdn.digitaloceanspaces.com/careific/logo-type-blue.png" alt="" class="h-12 mb-2 md:h-16">
+            <img src="https://juju222.sgp1.cdn.digitaloceanspaces.com/careific/logo-type-blue.webp" alt="" class="h-12 mb-2 md:h-16">
             <div class="text-blue">
                 <a href="/" class="mr-8">Home</a>
                 <a href="/about">About</a>
             </div>
         </div>
         <div class="flex items-center gap-4">
-            <img src="https://juju222.sgp1.cdn.digitaloceanspaces.com/careific/qr-app-store.png" alt="" class="h-24">
+            <img src="https://juju222.sgp1.cdn.digitaloceanspaces.com/careific/qr-app-store.webp" alt="" class="h-24">
             <div>
                 <h2 class="mb-1 text-lg font-bold md:text-2xl text-blue">Download The App</h2>
                 <p class="">Scan the QR code or <span class="text-blue"><a href="https://apps.apple.com/id/app/careific-monitor-your-senior/id6471642474" target="_blank">click here</a></span><br class="hidden md:block" /> to download the app.</p>
