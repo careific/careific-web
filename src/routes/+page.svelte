@@ -8,7 +8,7 @@
         {
             image: 'https://juju222.sgp1.cdn.digitaloceanspaces.com/careific/tracker.webp',
             title: 'Tracker',
-            content: 'The capability to track essential information about their seniors, including location, heart rate, device state, and inactivity.'
+            content: 'The capability to track essential information about your senior, including location, heart rate, device state, and inactivity.'
         },
         {
             image: 'https://juju222.sgp1.cdn.digitaloceanspaces.com/careific/emergency.webp',
@@ -237,7 +237,7 @@
         <div class="flex flex-col gap-4 reveal-right">
             <button class="{selectedFeature == 'tracker' ? 'bg-blue' : 'bg-white'} border-2 border-blue p-2 lg:p-4 rounded-lg cursor-pointer hover:scale-105 transition" on:click={() => (selectedFeature = "tracker")}>
                 <h2 class="text-xl lg:text-2xl xl:text-3xl font-bold text-left {selectedFeature == 'tracker' ? 'text-white' : 'text-blue'}">Tracker</h2>
-                <p class="text-sm xl:text-base text-left {selectedFeature == 'tracker' ? 'text-white' : 'text-black'}">The capability to track essential information about their seniors, including location, heart rate, device state, and inactivity.</p>
+                <p class="text-sm xl:text-base text-left {selectedFeature == 'tracker' ? 'text-white' : 'text-black'}">The capability to track essential information about your senior, including location, heart rate, device state, and more.</p>
             </button>
             <button class="{selectedFeature == 'emergency' ? 'bg-blue' : 'bg-white'} border-2 border-blue p-2 lg:p-4 rounded-lg cursor-pointer hover:scale-105 transition" on:click={() => (selectedFeature = "emergency")}>
                 <h2 class="text-xl lg:text-2xl xl:text-3xl font-bold text-left  {selectedFeature == 'emergency' ? 'text-white' : 'text-blue'}">Emergency</h2>
