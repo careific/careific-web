@@ -6,27 +6,27 @@
 
     let features = [
         {
-            image: 'https://juju222.sgp1.cdn.digitaloceanspaces.com/careific/tracker.webp',
+            image: 'https://juju.sgp1.cdn.digitaloceanspaces.com/careific/tracker.webp',
             title: 'Tracker',
             content: 'The capability to track essential information about your senior, including location, heart rate, device state, and inactivity.'
         },
         {
-            image: 'https://juju222.sgp1.cdn.digitaloceanspaces.com/careific/emergency.webp',
+            image: 'https://juju.sgp1.cdn.digitaloceanspaces.com/careific/emergency.webp',
             title: 'Emergency',
             content: 'The emergency feature combines fall detection and an SOS button for immediate assistance, ensuring rapid response in critical situations.'
         },
         {
-            image: 'https://juju222.sgp1.cdn.digitaloceanspaces.com/careific/walkie-talkie.webp',
+            image: 'https://juju.sgp1.cdn.digitaloceanspaces.com/careific/walkie-talkie.webp',
             title: 'Walkie-Talkie',
             content: 'By simply pressing the button, it can transmit voice directly to the senior’s phone, even if it’s locked.'
         },
         {
-            image: 'https://juju222.sgp1.cdn.digitaloceanspaces.com/careific/routines.webp',
+            image: 'https://juju.sgp1.cdn.digitaloceanspaces.com/careific/routines.webp',
             title: 'Routines',
             content: 'Enhances the interactive display of senior’s schedules by adding medication and activity reminders in real-time. '
         },
         {
-            image: 'https://juju222.sgp1.cdn.digitaloceanspaces.com/careific/ai-consultation.webp',
+            image: 'https://juju.sgp1.cdn.digitaloceanspaces.com/careific/ai-consultation.webp',
             title: 'AI Medical Consultation',
             content: 'The provides suggestions and answers based on questions about senior’s condition.'
         },
@@ -34,17 +34,17 @@
 
     let connects = [
         {
-            image: 'https://juju222.sgp1.cdn.digitaloceanspaces.com/careific/click.webp',
+            image: 'https://juju.sgp1.cdn.digitaloceanspaces.com/careific/click.webp',
             title: 'Click The Add Button',
             content: 'Navigate to the caregiver tracker view, select the senior’s name at the top left, and then click ’Add’ to effortlessly expand your caregiving network.'
         },
         {
-            image: 'https://juju222.sgp1.cdn.digitaloceanspaces.com/careific/enter.webp',
+            image: 'https://juju.sgp1.cdn.digitaloceanspaces.com/careific/enter.webp',
             title: 'Enter Your Senior’s Email',
             content: 'Input your senior’s email, initiating an invitation process within the caregiver’s view to connect them to the caregiving network.'
         },
         {
-            image: 'https://juju222.sgp1.cdn.digitaloceanspaces.com/careific/accept.webp',
+            image: 'https://juju.sgp1.cdn.digitaloceanspaces.com/careific/accept.webp',
             title: 'Accept Invitation',
             content: 'Seniors receive and can easily accept the invitation in their view, ensuring their active participation and connection within the caregiving network.'
         }
@@ -121,7 +121,7 @@
 </script>
 
 <nav class="flex items-center justify-between px-2 py-2 text-white md:py-4 md:px-8 lg:px-12 xl:px-24 bg-blue">
-    <img src="https://juju222.sgp1.cdn.digitaloceanspaces.com/careific/logo-type-white.webp" alt="" class="h-8 md:h-12 ms-2 md:ms-0">
+    <img src="https://juju.sgp1.cdn.digitaloceanspaces.com/careific/logo-type-white.webp" alt="" class="h-8 md:h-12 ms-2 md:ms-0">
     <div class="hidden gap-12 lg:flex">
         <a href="#what-is-careific" class="transition hover:scale-105">What is Careific</a>
         <a href="#features" class="transition hover:scale-105">Features</a>
@@ -159,7 +159,7 @@
 <div class="items-center hidden grid-cols-3 gap-1 pt-8 -mt-1 text-white md:pt-4 lg:pt-12 xl:gap-8 md:grid bg-blue">
     <div class="flex items-end justify-start mt-0 lg:mt-24">
         <div class="flex items-end h-72 lg:h-96">
-            <img src="https://juju222.sgp1.cdn.digitaloceanspaces.com/careific/caregiver.webp" alt="" class="reveal-left">
+            <img src="https://juju.sgp1.cdn.digitaloceanspaces.com/careific/caregiver.webp" alt="" class="reveal-left">
         </div>
     </div>
     
@@ -168,21 +168,21 @@
             <h1 class="mb-1 text-5xl font-bold text-center lg:text-7xl">Careific</h1>
             <p class="mb-8 text-lg text-center lg:text-2xl">Monitoring Health and Nurturing Hearts</p>
             <a href="https://apps.apple.com/id/app/careific-monitor-your-senior/id6471642474" target="_blank">
-                <img src="https://juju222.sgp1.cdn.digitaloceanspaces.com/careific/app-store.webp" alt="" class="mx-auto transition w-36 lg:w-48 hover:scale-105">
+                <img src="https://juju.sgp1.cdn.digitaloceanspaces.com/careific/app-store.webp" alt="" class="mx-auto transition w-36 lg:w-48 hover:scale-105">
             </a>
         </div>
     </div>
     
     <div class="flex items-end justify-end mt-0 lg:mt-24">
         <div class="flex items-end h-72 lg:h-96">
-            <img src="https://juju222.sgp1.cdn.digitaloceanspaces.com/careific/senior.webp" alt="" class="reveal-right">
+            <img src="https://juju.sgp1.cdn.digitaloceanspaces.com/careific/senior.webp" alt="" class="reveal-right">
         </div>
     </div>
 </div>
 <div class="items-center justify-center hidden mb-8 -mt-64 lg:flex reveal-bottom">
     <div class="flex items-center justify-center gap-4 xl:gap-8">
-        <img src="https://juju222.sgp1.cdn.digitaloceanspaces.com/careific/tracker-jumbotron.webp" alt="" class="h-128">
-        <img src="https://juju222.sgp1.cdn.digitaloceanspaces.com/careific/dashboard-jumbotron.webp" alt="" class="h-128">
+        <img src="https://juju.sgp1.cdn.digitaloceanspaces.com/careific/tracker-jumbotron.webp" alt="" class="h-128">
+        <img src="https://juju.sgp1.cdn.digitaloceanspaces.com/careific/dashboard-jumbotron.webp" alt="" class="h-128">
     </div>
 </div>
 
@@ -193,17 +193,17 @@
             <h1 class="mb-1 text-4xl font-bold text-center">Careific</h1>
             <p class="mb-4 text-center">Monitoring Health and Nurturing Hearts</p>
             <a href="https://apps.apple.com/id/app/careific-monitor-your-senior/id6471642474" target="_blank">
-                <img src="https://juju222.sgp1.cdn.digitaloceanspaces.com/careific/app-store.webp" alt="" class="mx-auto w-36">
+                <img src="https://juju.sgp1.cdn.digitaloceanspaces.com/careific/app-store.webp" alt="" class="mx-auto w-36">
             </a>
         </div>
     </div>
     <div class="flex items-center justify-center">
-        <img src="https://juju222.sgp1.cdn.digitaloceanspaces.com/careific/family.webp" alt="" class="reveal-right">
+        <img src="https://juju.sgp1.cdn.digitaloceanspaces.com/careific/family.webp" alt="" class="reveal-right">
     </div>
 </div>
 
 <div class="grid items-center grid-cols-1 gap-4 px-4 py-8 lg:py-12 md:grid-cols-2 lg:gap-8 xl:gap-12 md:px-8 lg:px-12 xl:px-24" id="what-is-careific">
-    <img src="https://juju222.sgp1.cdn.digitaloceanspaces.com/careific/all-in-one.webp" alt="" class="reveal-left">
+    <img src="https://juju.sgp1.cdn.digitaloceanspaces.com/careific/all-in-one.webp" alt="" class="reveal-left">
     <div class="reveal-right">
         <h1 class="text-3xl font-bold text-center lg:text-4xl text-blue md:text-left">All-in-One Caregiving App</h1>
         <p class="mt-4 mb-6 leading-relaxed text-center lg:mb-8 lg:text-xl md:text-left">Introducing our all-encompassing Caregiving App, a complete solution prioritizing your loved ones' well-being. Track their location in real-time, monitor heart rate and device status for health updates and reliability assurance. It includes a range of safety features: inactivity tracking, fall detection, SOS button, and a walkie-talkie for seamless communication. Set routines reminders and access AI-powered medical consultations, ensuring comprehensive care and peace of mind.</p>
@@ -223,15 +223,15 @@
 
     <div class="items-center hidden grid-cols-2 gap-2 md:grid xl:gap-8">
         {#if selectedFeature == "tracker"}
-            <img src="https://juju222.sgp1.cdn.digitaloceanspaces.com/careific/tracker.webp" alt="" class="reveal-left">
+            <img src="https://juju.sgp1.cdn.digitaloceanspaces.com/careific/tracker.webp" alt="" class="reveal-left">
         {:else if selectedFeature == "emergency"}
-            <img src="https://juju222.sgp1.cdn.digitaloceanspaces.com/careific/emergency.webp" alt="" class="">
+            <img src="https://juju.sgp1.cdn.digitaloceanspaces.com/careific/emergency.webp" alt="" class="">
         {:else if selectedFeature == "walkie-talkie"}
-            <img src="https://juju222.sgp1.cdn.digitaloceanspaces.com/careific/walkie-talkie.webp" alt="" class="">
+            <img src="https://juju.sgp1.cdn.digitaloceanspaces.com/careific/walkie-talkie.webp" alt="" class="">
         {:else if selectedFeature == "routines"}
-            <img src="https://juju222.sgp1.cdn.digitaloceanspaces.com/careific/routines.webp" alt="" class="">
+            <img src="https://juju.sgp1.cdn.digitaloceanspaces.com/careific/routines.webp" alt="" class="">
         {:else if selectedFeature == "ai-consultation"}
-            <img src="https://juju222.sgp1.cdn.digitaloceanspaces.com/careific/ai-consultation.webp" alt="" class="">
+            <img src="https://juju.sgp1.cdn.digitaloceanspaces.com/careific/ai-consultation.webp" alt="" class="">
         {/if}
 
         <div class="flex flex-col gap-4 reveal-right">
@@ -300,7 +300,7 @@
         <div class="rounded-xl h-128">
             <div class="bg-blue h-1/3 lg:h-1/2 rounded-t-xl">
                 <div class="flex items-center justify-center h-full p-4 pb-10">
-                    <img src="https://juju222.sgp1.cdn.digitaloceanspaces.com/careific/click.webp" alt="" class="max-h-48">
+                    <img src="https://juju.sgp1.cdn.digitaloceanspaces.com/careific/click.webp" alt="" class="max-h-48">
                 </div>
             </div>
             <div class="border-b-2 border-x-2 h-1/2 border-gray rounded-b-xl">
@@ -316,7 +316,7 @@
         <div class="rounded-xl h-128">
             <div class="bg-blue h-1/3 lg:h-1/2 rounded-t-xl">
                 <div class="flex items-center justify-center h-full p-4 pb-10">
-                    <img src="https://juju222.sgp1.cdn.digitaloceanspaces.com/careific/enter.webp" alt="" class="max-h-48">
+                    <img src="https://juju.sgp1.cdn.digitaloceanspaces.com/careific/enter.webp" alt="" class="max-h-48">
                 </div>
             </div>
             <div class="border-b-2 border-x-2 h-1/2 border-gray rounded-b-xl">
@@ -332,7 +332,7 @@
         <div class="rounded-xl h-128">
             <div class="bg-blue h-1/3 lg:h-1/2 rounded-t-xl">
                 <div class="flex items-center justify-center h-full p-4 pb-10">
-                    <img src="https://juju222.sgp1.cdn.digitaloceanspaces.com/careific/accept.webp" alt="" class="max-h-48">
+                    <img src="https://juju.sgp1.cdn.digitaloceanspaces.com/careific/accept.webp" alt="" class="max-h-48">
                 </div>
             </div>
             <div class="border-b-2 border-x-2 h-1/2 border-gray rounded-b-xl">
@@ -431,14 +431,14 @@
 <footer class="px-4 py-4 pt-12 md:px-8 lg:px-12 xl:px-24">
     <div class="flex flex-col items-center justify-between gap-4 md:items-end md:flex-row">
         <div class="flex flex-col items-center md:items-start">
-            <img src="https://juju222.sgp1.cdn.digitaloceanspaces.com/careific/logo-type-blue.webp" alt="" class="h-12 mb-2 md:h-16">
+            <img src="https://juju.sgp1.cdn.digitaloceanspaces.com/careific/logo-type-blue.webp" alt="" class="h-12 mb-2 md:h-16">
             <div class="text-blue">
                 <a href="/about" class="mr-8">About</a>
                 <a href="/privacy-policy">Privacy Policy</a>
             </div>
         </div>
         <div class="flex items-center gap-4">
-            <img src="https://juju222.sgp1.cdn.digitaloceanspaces.com/careific/qr-app-store.webp" alt="" class="h-24">
+            <img src="https://juju.sgp1.cdn.digitaloceanspaces.com/careific/qr-app-store.webp" alt="" class="h-24">
             <div>
                 <h2 class="mb-1 text-lg font-bold md:text-2xl text-blue">Download The App</h2>
                 <p class="">Scan the QR code or <span class="text-blue"><a href="https://apps.apple.com/id/app/careific-monitor-your-senior/id6471642474" target="_blank">click here</a></span><br class="hidden md:block" /> to download the app.</p>
