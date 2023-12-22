@@ -120,7 +120,7 @@
     };
 </script>
 
-<nav class="flex items-center justify-between px-2 py-2 text-white md:py-4 md:px-8 lg:px-12 xl:px-24 bg-blue">
+<nav class="flex items-center justify-between px-2 py-2 text-white md:py-4 md:px-8 lg:px-12 xl:px-24 bg-blue z-10 sticky">
     <img src="https://juju.sgp1.cdn.digitaloceanspaces.com/careific/logo-type-white.webp" alt="" class="h-8 md:h-12 ms-2 md:ms-0">
     <div class="hidden gap-12 lg:flex">
         <a href="#what-is-careific" class="transition hover:scale-105">What is Careific</a>
@@ -156,7 +156,7 @@
     {/if}
 </div>
 
-<div class="items-center hidden grid-cols-3 gap-1 pt-8 -mt-1 text-white md:pt-4 lg:pt-12 xl:gap-8 md:grid bg-blue">
+<div class="items-center hidden grid-cols-3 gap-1 pt-8 -mt-1 text-white md:pt-24 lg:pt-24 xl:pt-40 2xl:pt-60 xl:gap-8 md:grid bg-blue">
     <div class="flex items-end justify-start mt-0 lg:mt-24">
         <div class="flex items-end h-72 lg:h-96">
             <img src="https://juju.sgp1.cdn.digitaloceanspaces.com/careific/caregiver.webp" alt="" class="reveal-left">
